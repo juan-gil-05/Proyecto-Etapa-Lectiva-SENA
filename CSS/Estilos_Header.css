@@ -1,0 +1,207 @@
+/* cetear o formatear los elementos de la pagina (Valores 0)  */
+/* estes todo los elementos de la pagina */
+*{    
+    margin: 0; /*Margen de la pagina*/    
+    padding: 0; /*margen interna*/    
+    box-sizing: border-box; /*formato de los elementos*/    
+    font-family: 'Poppins', sans-serif; /*fuentes de la pagina */
+}
+
+/* cuerpo de la pagina  */
+body{
+    background-color: #FFDECF; /*Color de fondo de toda la pagina*/
+}
+
+/* logo de la pagina  */
+.logo img{    /*Linea 23*/
+    width: 140px; /*Tamaño Ancho*/   
+    padding: 22px;  /*Tamaño "submargen"*/    
+    cursor: pointer; /*Propiedad del curso */      
+}
+
+.logo {
+    transition: 0.9s;
+}
+
+.logo:hover{
+    transform:scale(1.1);
+}
+
+.menu_bar .enlaces ul li a{   /*Linea 27 - 28*/
+    font-size: 16px;  /*tamaño de la letra*/
+    color: white; /*Color*/    
+    font-weight: 600; /*Negrilla*/    
+    text-transform: uppercase; /*"text-transform" para cambiar a mayúsculas y minúsculas*/   
+    text-decoration: none;  /*quitar la raya de los enlaces*/
+
+    /* efecto de linea de abajo */
+    background: linear-gradient(currentColor,CurrentColor); /* Color de Fondo */
+    background-position: 100% 100%; /*Posición de Fondo*/
+    background-repeat: no-repeat; /* Repetición de Fondo */
+    background-size: 0% 2px; /*tamaño de fondo*/
+    transition: all 0.9s; /*tracción de elementos*/
+}
+
+/*se posicionan los enlaces del menu*/
+.enlaces{
+    padding-top: 12px;
+}
+
+/* clase para las propiedades de los iconos redes sociales */
+.menu_bar .redes_sociales a{ /*Linea 27 - 37*/
+    padding: 10px; /*espaciado iconos de redes sociales*/
+    color: white; /*cambiar color iconos*/
+    text-decoration: none; /*Quitar la raya de los iconos de redes*/
+}
+
+/*Posicionamos el texto del icono carrito de compras*/
+.icon-text{ /*linea 40*/
+    display: block;  /*bajamos el texto*/
+    text-align: right;  /*lo ponemos a la derecha*/
+    font-size: 0.7rem;  /*cambiamos su tamaño*/
+    padding-right: 7px; /*la posicionamos debajo del icono*/
+    font-weight: 600;  /*espesor del texto*/
+}
+
+/*se posicionan los iconos del menu*/
+.redes_sociales{
+    padding-top: 8px;
+    padding-right: 5px;
+}
+
+/*posicionamos el separador*/
+.separador{
+    border-left: 1px solid #FFDECF;  /* Estilo del separador - un borde izquierdo sólido */
+    margin-left: -10px; /*posicionamos*/
+    margin-right: -6px;  /*posicionamos*/
+    border-left-width: thin; /*linea delgada*/
+    padding-top: 16px;  /*posicionamos*/
+}
+
+/* clase para las propiedades de los iconos */
+.menu_bar .redes_sociales span.material-icons{ /*Linea 27 - 37*/
+    font-size: 30px; /* tamaño de los iconos  */   
+}
+
+/*Posicionamos nuestra caja de busqueda*/
+.Buscador {
+    padding: 2px;
+    margin-left: -100px;
+}
+
+/*Posicionamos nuestra caja de busqueda*/
+.caja_busqueda{
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 502px;
+    font-size: 14px;
+    text-align: left;
+    height: 38px;
+    border-radius: 50px;
+    margin-top: 7px;
+}
+
+/*Posicionamos nuestra caja de busqueda*/
+.buscar-libro{
+    height: 40px;
+    width: 600px;
+}
+
+/*Posicionamos nuestro boton de busqueda*/
+.btn-buscar{
+    position: absolute;
+    border-radius: 100%;
+    margin-left: -39px;
+    margin-top: 9px;
+    background-color: white;
+    font-size: 8px;
+    width: 37px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.menu_principal{  /*Linea 22*/
+    background-color: #883D1A; /*Color del fondo menu principal*/
+    /*Unidades de medida fija y dinamica*/    
+    height: 115px; /*alto del objeto*/
+    width: 100%; /*Tamaño Ancho*/ 
+    display: flex; /* los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
+    justify-content: space-around; /*Separar los elementos*/    
+    align-items: center; /*Centro de objeto*/
+    padding: 0 5px; /*Area de Relleno - contenido dentro de la márgen*/
+    margin-top: 0px; /*Margen Menu principal*/ 
+}
+
+/* menu bar es  hijo 2.1, 2.2 */
+.menu_bar { /*Linea 27*/
+    width: 100%; /*Ancho iconos se ajustan*/
+    display: flex; /* los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
+    justify-content: space-between; /*Espacio entre los objetos*/
+    height: 50px;
+}
+
+.menu_bar .enlaces ul li{ /*Linea 27 - 28*/
+    display: inline-block; /*Alinear horizontalmente*/
+    padding: 0px 10px; /*Area de Relleno - contenido dentro de la márgen*/
+}
+
+
+/*agregamos efecto al boton de buscar*/
+#btn-icon{  
+    transition: 0.4s;
+}
+
+#btn-icon:hover{
+    transform: scale(1.2);
+}
+
+/*pseudo clase :hover*/
+.menu_bar .enlaces ul li a:hover{ /*Linea 27 - 28*/
+    color: #73DCD1; /*Cambio de color menu: clientes, productos, contactenos*/    
+    background-size: 90% 2px; /*efecto de raya de letras*/    
+}
+
+/*animacion de iconos*/
+.redes_sociales .material-icons{ /*Linea 37*/ 
+    transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/    
+}
+.redes_sociales .material-icons:hover{ /*Linea 37*/
+    color: #1A1E87; /*Cambio de color iconos redes sociales*/ 
+    transform: scale(1.2);/*tracción de elementos*/    
+}
+
+/*cambio de color de texto 'Mi Carrito'*/
+.redes_sociales .icon-text{ /*Linea 37*/ 
+    transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/    
+}
+.redes_sociales .icon-text:hover{ /*Linea 37*/
+    color: #73DCD1; /*Cambio de color iconos redes sociales*/ 
+    transform: scale(1.0);/*tracción de elementos*/    
+}
+
+#carrito:hover {
+    color: white; /*Cambio de color icono carrito*/ 
+    transform: scale(1.2);/*tracción de elementos*/ 
+    transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/    
+}
+
+.Buscar:hover{
+    color: #73DCD1; /*Cambio de color Barra de busqueda*/    
+    background-size: 90% 2px; /*efecto de raya de letras*/  
+}
+
+/*Estilos de boton*/
+.menu_principal i{ /*Linea 22*/
+    color: #78F436; /*Color botón responsive*/
+    font-size: 40px; /*tamaño fuente del botón responsive*/
+    cursor: pointer; /*Cambia el puntero del mouse*/
+    transition: all 0.5s; /*tracción de elementos*/
+    display: none; /*Pantalla Ninguna*/
+}
+
+.menu_principal i:hover{ /*Linea 22*/
+    color: lightcoral; /*Color botón responsive*/
+}

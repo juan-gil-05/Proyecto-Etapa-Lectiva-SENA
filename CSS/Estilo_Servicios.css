@@ -1,0 +1,156 @@
+*{
+    font-family: 'Poppins', sans-serif; /*fuente de la pagina*/
+}
+
+#Servicios{ /*Linea 49*/
+    background-color: #DC9473; /*Color de Fondo*/
+    height: 100vh; /*Altura Para Dispositivos Móviles*/
+    padding: 40px; /*Margen Interna*/
+}
+
+.titulo1{ /*Linea 51*/
+    color: white; /*Color de Titulo*/
+    font-size: 45px; /*Tamaño de Fuente*/
+    font-weight: 900; /*Peso de Fuente*/
+    text-align: center; /*Texto Alineado al Centro*/
+    text-transform: uppercase; /*transformación de texto: mayúsculas*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.titulo2{
+    color: #73DCD1; /*Color de Titulo*/
+    font-size: 45px; /*Tamaño de Fuente*/
+    font-weight: 900; /*Peso de Fuente*/
+    text-align: center; /*Texto Alineado al Centro*/
+    text-transform: uppercase; /*transformación de texto: mayúsculas*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.linea_titulo{
+    margin: auto;   /*centramos la linea*/
+    width: 363px;   /*le damos el tamaño*/
+    border: 1px solid #73DCD1;  /*le damos un borde*/
+}
+
+.subtitulo{ /*Linea 52*/
+    color: white; /*Color de Sub-Titulo*/
+    text-align: center; /*Texto Alineado al Centro*/
+    text-transform: uppercase; /*transformación de texto: mayúsculas*/
+    font-weight: 600; /*Peso de Fuente*/
+    font-size: 23px; /*Tamaño de Fuente*/
+    margin: 1%;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* Estilos de los Títulos  */
+.Servicios-titulo{ /*Linea 50*/
+    display: flex; /*los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
+    justify-content: center; /*Justificar contenido al centro*/
+    align-items: center; /*alinear los elementos al centro*/
+    flex-direction: column; /*dirección flexible: columna*/
+    margin-bottom: 50px; /*Margen del botón*/
+}
+
+/* imagen central  */
+.Imagen_Central img{ /*Linea 56*/
+    margin: 20px; /*margen dentro de la pagina*/
+    width: 400px; /*Tamaño Ancho*/ 
+    height: 400px; /*alto de la imagen central*/
+    border-radius: 100%; /* forma de circulo */
+    border: 3px solid #73DCD1; /*Borde de la imagen central*/
+    object-fit: cover; /*ajuste de objeto: cubierta: "posición de ajuste"*/
+    object-position: center; /*posición-objeto: centro;*/
+    transition: all 0.5s; /*tracción de elementos*/
+}
+
+.Servicios_Ofertas{ /*Linea 55*/
+    display: grid; /*pantalla: cuadrícula*/
+    grid-template-columns: repeat(3,1fr); /*Ajuste de la columna*/
+    grid-template-rows: repeat(2,auto); /*Ajuste de filas*/    
+    grid-gap: 30px; /*Espacio cuadricula*/
+
+    /* Estructura de elementos */
+    grid-template-areas: "juveniles imagen infantiles" /*áreas de plantilla de cuadrícula*/
+                        "literatura imagen idiomas"
+}
+
+.infantiles{ /*Linea 60*/      
+    grid-column: infantiles; /*Ubicación por columna*/        
+    grid-row: infantiles; /*Ubicación por fila*/      
+}
+
+.juveniles { /*Linea 66*/ 
+    grid-column: juveniles; /*Ubicación por columna*/
+    grid-row: juveniles; /*Ubicación por fila*/ 
+}
+
+.literatura{ /*Linea 78*/ 
+    grid-column: literatura; /*Ubicación por columna*/
+    grid-row: literatura; /*Ubicación por fila*/    
+}
+
+.idiomas{ /*Linea 72*/ 
+    grid-column: idiomas; /*Ubicación por columna*/
+    grid-row: idiomas; /*Ubicación por fila*/    
+}
+
+.Imagen_Central{ /*Linea 56*/ 
+    grid-column: imagen; /*Ubicación por columna*/
+    grid-row: imagen; /*Ubicación por fila*/
+    display: flex; /*los objetos se van acomodando a medida que agranda o se achiquita la pantalla*/
+    justify-content: center; /*Justificar contenido al centro*/
+    align-items: center; /*Centro de objeto*/
+    transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/
+}
+
+.Imagen_Central:hover{ /*Linea 56*/ 
+    transform: scale(1.1); /*imagen central escala cuando se le pasa el puntero del mouse*/
+}
+
+.Imagen_Central img:hover{ /*Linea 56*/ 
+    background-color: white; /*imagen central color cuando se le pasa el puntero del mouse*/
+}
+
+.libros{
+    display: flex; /*los objetos se van acomodando a medida que agranda o se achiquita la pantalla*/
+    align-items: center; /*alinear los elementos al centro*/
+    flex-direction: column; /*dirección flexible: columna*/
+}
+
+.libros .titulo_libro{ /*Linea 51*/
+    color: #472C1F; /*Color items: Arroz, Carnes, Licuadora, Pescaderia*/
+    text-transform: uppercase; /*"text-transform" para cambiar a mayúsculas y minúsculas*/ 
+    font-size: 20px; /*Tamaño de Fuente*/
+    font-weight: 900; /*Peso de Fuente*/
+    text-align: center; /*Texto Alineado al Centro*/
+    margin-bottom: 5px; /*Margen de los botones*/
+    margin-top: 10px;
+}
+
+.libros .texto_libro{ /*Linea 63*/
+    color: black; /*Color de los textos */
+    font-size: 16px; /*Tamaño de Fuente*/
+    font-weight: 500;
+    padding: 0 80px; /*Margen Interna*/
+    text-align: center; /*Texto Alineado al Centro*/
+
+}
+
+/*Fuentes de iconos*/
+.libros span.material-icons{ /*Linea 61*/
+    display: flex; /*los objetos se van acomodando a medida que agranda o se achiquita la pantalla*/
+    justify-content: center; /*Justificar contenido al centro*/
+    align-items: center; /*Justificar contenido al centro*/
+    color: white; /*Color Iconos servicios*/
+    font-size: 40px; /*Tamaño de Fuente*/
+    padding: 20px; /*Margen Interna*/
+    border: 5px double #73DCD1; /*color borde iconos arroz, carnes, licuadora y pescaderia*/
+    border-radius: 50%; /*marcos redondeados*/
+    transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/
+    cursor: pointer;
+}
+
+.libros span.material-icons:hover{ /*Linea 61*/
+    background-color: #873C1A; /*Color de Fondo*/
+}

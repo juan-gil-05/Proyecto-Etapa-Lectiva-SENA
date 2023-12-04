@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Bibliopolis</title>   <!-- Nonmbre de mi pagina -->
+
+    <!-- link para los css de estilos -->
+    <link rel="stylesheet" href="../CSS/Estilos_Header.css">
+    <link rel="stylesheet" href="../CSS/Estilos_Carrusel.css">
+    <link rel="stylesheet" href="../CSS/Estilo_Servicios.css">
+    <link rel="stylesheet" href="../CSS/Estilos_Responsive.css">
+
+    <!--link que conecta con los icons 'google icons'-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- link que conecta con el tipo de letra 'google fonts' -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>    <!--Cuerpo de la pagina-->
+        <div class="menu_principal">    <!--Menu Principal PADRE-->
+            <div class="logo">  <!--Hijo 1 del div padre-->
+                <img src="../Bodega_Imagenes/logo-sin-fondo.png" alt="Logo Principal">
+            </div>
+            
+            <!-- Barra de menu  -->
+            <div class="menu_bar" id="menu_bar">    <!--Hijo 2 del div padre-->
+                <!-- Lista del menu -->
+                <nav class="enlaces">   <!--hijo 2.1 del div hijo 2-->
+                    <ul>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Libros</a></li>
+                        <li><a href="#">Contactenos</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Busqueda del libro -->
+                <div class="Buscador">
+                    <form class="buscar-libro" name="buscador">                     
+                        <input type="text" placeholder="Buscar libro por: autor, título, género .." class="caja_busqueda">
+                        <button class="btn-buscar"><span class="material-icons" id="btn-icon" >search</span></button>                    
+                    </form>
+                </div>
+
+                <!-- Lista de redes sociales y carrito de compras -->
+                <div class="redes_sociales">  <!--hijo 2.2 del div hijo 2-->
+                    <a href="#"><span class="material-icons">facebook</span></a>
+                    <span class="separador"></span>
+                    <a href="#"><span class="material-icons">telegram</span></a>
+                    <span class="separador"></span>
+                    <a href="#"><span class="material-icons">duo</span></a>
+                    <!-- <span class="separador"></span> -->
+                    <a href="#"><span class="material-icons" id="carrito">shopping_cart</span></a>
+                    <a href="#"><span class="icon-text">Mi Carrito</span></a>
+                </div>
+            </div>
+        
+            <i class="material-icons" id="btnMenuOpen" value="true">menu</i>  <!--hijo 3 del div padre-->   
+        </div>
+    </header>
+
+    <section id="Servicios">    <!--Seccion 1-->
+        <div class="Servicios_titulo">  <!--hijo 1 de seccion 1-->
+            <h1 class="titulo1">encuentra todos <span class="titulo2"> tus libros favoritos</span></h1>
+            <hr class="linea_titulo">
+            <h2 class="subtitulo">Categorías destacadas</h2>
+        </div>
+
+        <div class="Servicios_Ofertas">    <!--hijo 2 de seccion 1--> 
+            <div class="Imagen_Central">    <!--Hijo 2.1-->
+                <img src="../Bodega_Imagenes/Biblioteca.jpg" alt="imagen-centro">
+            </div>
+
+            <div class="libros infantiles">   <!--hijo 2.2-->
+                <p><a href="#Infantiles"><span class="material-icons">book</span></a></p>
+                <p class="titulo_libro">infantiles</p>
+                <p class="texto_libro">Historias y dibujos divertidos para niños</p>
+            </div>
+
+            <div class="libros literatura">   <!--hijo 2.3-->
+                <p><a href="#literatura"><span class="material-icons">book</span></a></p>
+                <p class="titulo_libro">literatura</p>
+                <p class="texto_libro">Obras escritas que exploran la creatividad y narran historias</p>
+            </div>
+
+            <div class="libros juveniles">   <!--hijo 2.4-->
+                <p><a href="#juveniles"><span class="material-icons">book</span></a></p>
+                <p class="titulo_libro">juveniles</p>
+                <p class="texto_libro">Aventuras emocionantes y temas relevantes para adolescentes</p>
+            </div>
+
+            <div class="libros idiomas">   <!--hijo 2.5-->
+                <p><a href="#idiomas"><span class="material-icons">book</span></a></p>
+                <p class="titulo_libro">idiomas</p>
+                <p class="texto_libro">lecciones estructuradas, ejercicios y vocabulario para aprender un nuevo idioma.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Carrusel_servicios">   <!--seccion 2-->
+        <div class="contenedor_principal">  <!--servicios en carrusel-->
+            <button id="btn-izquierda"><span class="material-icons">double_arrow</span></button>   <!--boton izquierdo-->
+
+            <div class="slider">          <!--carrusel-->                  
+                <!--contenedor 1 categoria-->      
+                <div class="Container_servicios" id="juveniles">  
+                    <div class="descripcion-servicios"> <!--Texto de los servicios-->
+                        <h1 >Libros <b class="categoria_libro"> Juveniles</b></h1>
+                            <h2>Universo Marvel</h2>
+                            <p>Esta guía definitiva del universo Marvel presenta en orden cronológico todos los personajes 
+                                importantes de Marvel Comics, ubicaciones, vehículos y armas de la historia.
+                                Realiza un viaje a través de los primeros héroes y villanos de Marvel en  las décadas de 
+                                1940 y 1950 hasta los Superhéroes y supervillanos de la  época de 1960 y posteriores, como Thor,
+                                Hulk, Spider-Man, Iron Man o Los Vengadores.</p>
+                            <br>
+                            <!--boton de compra-->
+                            <button class="btn_comprar"> Compra Aqui <span class="material-icons">label_important</span></button>
+                    </div>
+                    <div class="imagen_Libro">  <!--imagen Libro-->
+                        <img src="../Bodega_Imagenes/juveniles.png" alt="">  <!--imagen del carrusel-->
+                    </div>
+                </div>
+            
+
+                <!--contenedor 2 otra categoria-->
+                <div class="Container_servicios" id="literatura">  
+                    <div class="descripcion-servicios">     <!--Texto de los servicios-->
+                        <h1 class="categoria">Libros de <b class="categoria_libro"> literatura</b></h1>
+                        <h2>la ilíada</h2>
+                        <p>En este clásico universal y poema épico, probablemente escrito entre la segunda 
+                            mitad del siglo IX o en la primera mitad del siglo VIII A.C., Homero, en veinticuatro 
+                            cantos narra la guerra entre griegos y troyanos.</p>
+                        <br>
+                        <!--boton de compra-->
+                        <button class="btn_comprar"> Compra Aqui <span class="material-icons">label_important</span></button>
+                    </div>
+                    <div class="imagen_Libro">  <!--imagen Libro-->
+                        <img src="../Bodega_Imagenes/iliada.png" alt="">  <!--imagen del carrusel-->
+                    </div>
+                </div>
+
+
+                <!--contenedor 3 otra categoria-->
+                <div class="Container_servicios" id="Infantiles">   
+                    <div class="descripcion-servicios">     <!--Texto de los servicios-->
+                        <h1>Libros <b class="categoria_libro"> Infantiles</b></h1>
+                        <h2>EL CASCANUECES</h2>
+                        <p>Es Noche buena en casa de los Stahlbaum, Marie y Fritz esperan ansiosos el 
+                            regalo de su padrino Drosselmeier, quien todas las Navidades les sorprende 
+                            con un obsequio hecho por el mismo. Este año les ha regalado un impresionante 
+                            castillo, pero los hermanos pierden pronto el interés en el. Marie se fija, en cambio, 
+                            en un cascanueces vestido de soldado que reposa a los pies del árbol.</p>
+                        <br>
+                        <!--boton de compra-->
+                        <button class="btn_comprar"> Compra Aqui <span class="material-icons">label_important</span></button>
+                    </div>
+                    <div class="imagen_Libro">  <!--imagen Libro-->
+                        <img src="../Bodega_Imagenes/cascanueces.png" alt="">  <!--imagen del carrusel-->
+                    </div>
+                </div>
+
+                <!--contenedor 4 otra categoria-->
+                <div class="Container_servicios" id="idiomas">  
+                    <div class="descripcion-servicios">     <!--Texto de los servicios-->
+                        <h1>Libros de <b class="categoria_libro"> idiomas</b></h1>
+                        <h2>GRAMATICA FRANCESA ESPASA</h2>
+                        <p>No te pongas límites, aprende idiomas. Estructura sintáctica de la oración.
+                            Modelos de conjugación de verbos regulares e irregulares.                               
+                            Normas de acentuación y puntuación.
+                            Formas y usos de los distintos elementos de la oración: sustantivos, adjetivos,
+                            verbos, pronombres, determinantes, preposiciones y conjunciones.
+                            Formación de género y número.
+                            Ejemplos de uso extraídos del francés de hoy.
+                            Glosario de términos gramaticales.</p>
+                        <br>
+                        <!--boton de compra-->
+                        <button class="btn_comprar"> Compra Aqui <span class="material-icons">label_important</span></button>
+                    </div>
+                    <div class="imagen_Libro">  <!--imagen Libro-->
+                        <img src="../Bodega_Imagenes/gramatica.png" alt="">  <!--imagen del carrusel-->
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="btn-derecha"><span class="material-icons">double_arrow</span></button> <!--boton derecha-->
+        </div>
+    </section>
+
+        <!-- Conexión con la plantilla de Javascript -->
+        <script src="../JavaScript/AppButton.js"></script>
+        <script src="../JavaScript/AppSlider.js"></script>
+    </body>
+</html>
