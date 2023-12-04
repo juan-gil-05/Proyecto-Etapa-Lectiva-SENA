@@ -2,13 +2,13 @@
     font-family: 'Poppins', sans-serif; /*fuente de la pagina*/
 }
 
-#Servicios{ /*Linea 49*/
+#Servicios{ /*Linea 66*/
     background-color: #DC9473; /*Color de Fondo*/
     height: 100vh; /*Altura Para Dispositivos Móviles*/
     padding: 40px; /*Margen Interna*/
 }
 
-.titulo1{ /*Linea 51*/
+.titulo1{ /*Linea 68*/
     color: white; /*Color de Titulo*/
     font-size: 45px; /*Tamaño de Fuente*/
     font-weight: 900; /*Peso de Fuente*/
@@ -17,7 +17,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.titulo2{
+.titulo2{ /*lina 68*/
     color: #73DCD1; /*Color de Titulo*/
     font-size: 45px; /*Tamaño de Fuente*/
     font-weight: 900; /*Peso de Fuente*/
@@ -26,13 +26,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.linea_titulo{
+.linea_titulo{  /*linea 69*/
     margin: auto;   /*centramos la linea*/
     width: 363px;   /*le damos el tamaño*/
     border: 1px solid #73DCD1;  /*le damos un borde*/
 }
 
-.subtitulo{ /*Linea 52*/
+.subtitulo{ /*Linea 70*/
     color: white; /*Color de Sub-Titulo*/
     text-align: center; /*Texto Alineado al Centro*/
     text-transform: uppercase; /*transformación de texto: mayúsculas*/
@@ -44,7 +44,7 @@
 }
 
 /* Estilos de los Títulos  */
-.Servicios-titulo{ /*Linea 50*/
+.Servicios-titulo{ /*Linea 67/
     display: flex; /*los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
     justify-content: center; /*Justificar contenido al centro*/
     align-items: center; /*alinear los elementos al centro*/
@@ -53,7 +53,7 @@
 }
 
 /* imagen central  */
-.Imagen_Central img{ /*Linea 56*/
+.Imagen_Central img{ /*Linea 74*/
     margin: 20px; /*margen dentro de la pagina*/
     width: 400px; /*Tamaño Ancho*/ 
     height: 400px; /*alto de la imagen central*/
@@ -64,7 +64,7 @@
     transition: all 0.5s; /*tracción de elementos*/
 }
 
-.Servicios_Ofertas{ /*Linea 55*/
+.Servicios_Ofertas{ /*Linea 73*/
     display: grid; /*pantalla: cuadrícula*/
     grid-template-columns: repeat(3,1fr); /*Ajuste de la columna*/
     grid-template-rows: repeat(2,auto); /*Ajuste de filas*/    
@@ -75,27 +75,27 @@
                         "literatura imagen idiomas"
 }
 
-.infantiles{ /*Linea 60*/      
+.infantiles{ /*Linea 79*/      
     grid-column: infantiles; /*Ubicación por columna*/        
     grid-row: infantiles; /*Ubicación por fila*/      
 }
 
-.juveniles { /*Linea 66*/ 
+.juveniles { /*Linea 90*/ 
     grid-column: juveniles; /*Ubicación por columna*/
     grid-row: juveniles; /*Ubicación por fila*/ 
 }
 
-.literatura{ /*Linea 78*/ 
+.literatura{ /*Linea 84*/ 
     grid-column: literatura; /*Ubicación por columna*/
     grid-row: literatura; /*Ubicación por fila*/    
 }
 
-.idiomas{ /*Linea 72*/ 
+.idiomas{ /*Linea 96*/ 
     grid-column: idiomas; /*Ubicación por columna*/
     grid-row: idiomas; /*Ubicación por fila*/    
 }
 
-.Imagen_Central{ /*Linea 56*/ 
+.Imagen_Central{ /*Linea 74*/ 
     grid-column: imagen; /*Ubicación por columna*/
     grid-row: imagen; /*Ubicación por fila*/
     display: flex; /*los objetos se van acomodando a medida que agranda o se achiquita la pantalla*/
@@ -104,21 +104,21 @@
     transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/
 }
 
-.Imagen_Central:hover{ /*Linea 56*/ 
+.Imagen_Central:hover{ /*Linea 74*/ 
     transform: scale(1.1); /*imagen central escala cuando se le pasa el puntero del mouse*/
 }
 
-.Imagen_Central img:hover{ /*Linea 56*/ 
+.Imagen_Central img:hover{ /*Linea 74*/ 
     background-color: white; /*imagen central color cuando se le pasa el puntero del mouse*/
 }
 
-.libros{
+.libros{ /*linea 78 - 96 */
     display: flex; /*los objetos se van acomodando a medida que agranda o se achiquita la pantalla*/
     align-items: center; /*alinear los elementos al centro*/
     flex-direction: column; /*dirección flexible: columna*/
 }
 
-.libros .titulo_libro{ /*Linea 51*/
+.libros .titulo_libro{ /*Linea 78 - 96*/
     color: #472C1F; /*Color items: Arroz, Carnes, Licuadora, Pescaderia*/
     text-transform: uppercase; /*"text-transform" para cambiar a mayúsculas y minúsculas*/ 
     font-size: 20px; /*Tamaño de Fuente*/
@@ -128,7 +128,7 @@
     margin-top: 10px;
 }
 
-.libros .texto_libro{ /*Linea 63*/
+.libros .texto_libro{ /*Linea 78 - 96*/
     color: black; /*Color de los textos */
     font-size: 16px; /*Tamaño de Fuente*/
     font-weight: 500;
@@ -138,7 +138,7 @@
 }
 
 /*Fuentes de iconos*/
-.libros span.material-icons{ /*Linea 61*/
+.libros span.material-icons{ /*Linea 78 - 96*/
     display: flex; /*los objetos se van acomodando a medida que agranda o se achiquita la pantalla*/
     justify-content: center; /*Justificar contenido al centro*/
     align-items: center; /*Justificar contenido al centro*/
@@ -151,6 +151,6 @@
     cursor: pointer;
 }
 
-.libros span.material-icons:hover{ /*Linea 61*/
+.libros span.material-icons:hover{ /*Linea 78 - 96*/
     background-color: #873C1A; /*Color de Fondo*/
 }

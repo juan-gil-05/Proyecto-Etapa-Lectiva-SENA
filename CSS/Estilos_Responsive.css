@@ -1,18 +1,18 @@
 /*Media Query para Responsive*/
 @media screen and (max-width:600px){
     /*ajustar el fondo de los servios*/
-    #Servicios{       
+    #Servicios{        /*linea 66*/
         height: 150vh !important; /*Altura Para Dispositivos Móviles*/       
     }
 
     /*clases de proyectos con las propiedades CSS*/
-    .menu_principal{        
+    .menu_principal{      /*linea 25*/   
         margin-top: 0; /*Margen superior*/    
         position: fixed;  /*Pociones*/                
     }
 
     /* hijos 2.1 y 2.2 */
-    .menu_bar{
+    .menu_bar{ /*linea 31*/
         width: 100%; /*Tamaño Ancho*/ 
         height: 100vh; /*Altura Para Dispositivos Móviles*/
         background-color: #ecb359; /*Color de Fondo*/ 
@@ -28,32 +28,36 @@
     }
 
     /*Clase para el botón responsivo*/
-    .menu_bar.active{
+    .menu_bar.active{  /*linea 31*/
         transform: translateX(0%); /*Tranformar y mover menu bar al eje x*/
     }
 
 
     /*Ajustes de estilos de los enlaces*/
-    .menu_bar .enlaces ul li{
+    .menu_bar .enlaces ul li{  /*linea 31*/
         display: block; /*Bloqueo de Pantalla*/
         padding: 20px 10px; /*Margen Interna*/
         text-align: center; /*Texto Alineado al Centro*/       
     }
     
-    .menu-bar .enlaces ul li a{
+    .menu_bar .enlaces ul li a{  /*linea 31*/
         font-size: 18px; /*tamaño de letra - fuente */ 
     }
 
-    .menu_bar .redes_sociales span.material-icons{
+    .menu_bar .redes_sociales span.material-icons{  /*linea 50*/
         margin-bottom: 200px; /*Margen Boton*/
         font-size: 40px; /*tamaño de letra- fuente */ 
     } 
 
-    .menu_principal i{
+    .menu_principal i{ /*linea 25*/
         display: block; /*Bloqueo de Pantalla: esconder elementos*/
     }
 
-    .Imagen_Central img{
+    .Imagen_Central img{ /*lina 74*/
         display: none; /*Pantalla Ninguna: esconder elementos*/
     }
 }
+
+    .Buscador{ /*linea 42*/
+        display: none;  /*Pantalla Ninguna: esconder elementos*/
+    }

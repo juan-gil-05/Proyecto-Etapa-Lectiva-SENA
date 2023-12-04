@@ -1,4 +1,4 @@
-#Carrusel_servicios .contenedor_principal{ /*Linea 86*/
+#Carrusel_servicios .contenedor_principal{ /*Linea 104*/
     display: flex; /*los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
     align-items: center; /*alinear los elementos al centro*/
     position: relative; /*posición relativa*/
@@ -6,7 +6,7 @@
     z-index: 0; /* posiciones de la hoja  */    
 }
 
-.slider{ /*Linea 90*/
+.slider{ /*Linea 108*/
     display: flex; /*los objetos se van acomodando a medida que agranda o achiquita*/
     overflow: hidden; /*Desbordamiento: oculto, Desplaze las imagenes*/
     height: calc(100vh - 80px); /*Altura Para Dispositivos Móviles*/
@@ -14,7 +14,7 @@
 }
 
 /* Tamaños de los elementos de slider */
-.Container_servicios{ /*container_servicios*/
+.Container_servicios{ /*container_servicios*/ /*linea 110*/
     display: flex; /*los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
     justify-content: center; /*Justificar contenido al centro*/
     align-items: center; /*alinear los elementos al centro*/
@@ -22,13 +22,13 @@
     flex-shrink: 0; /*flexibilidad contraible pagina por pagina*/
 }
 
-.descripcion-servicios{  /*Linea 92*/
+.descripcion-servicios{  /*Linea 111*/
     width: 60%; /*Tamaño Ancho*/
     padding-left: 120px;
 }
 
 /*Descripción de los títulos*/
-.descripcion-servicios h1{
+.descripcion-servicios h1{ /*linea 112*/
     text-transform: uppercase; /*transformación de texto: minúsculas*/
     font-size: 3vw; /*Tamaño de Fuente VW: Televisores y Monitores*/
     font-weight: 600; /*Peso de Fuente*/
@@ -37,32 +37,28 @@
 
 
 /*Descripción de los títulos*/
-.descripcion-servicios h2{
+.descripcion-servicios h2{ /*linea 113*/
         text-transform: uppercase; /*transformación de texto: mayúsculas*/
         font-size: 2.2vw; /*Tamaño de Fuente VW: Televisores y Monitores*/
         font-weight: 400; /*Peso de Fuente*/
         margin-bottom: 10px;
 }
 
-.descripcion_libro{
-    margin-bottom: 10px;
-}
-
 /*Descripción de los párrafos*/
-.descripcion-servicios p{
+.descripcion-servicios p{ /*linea 114*/
     color: rgb(0, 0, 0); /*Color texto parrafos*/
     font-style: italic; /*Estilo de la Fuente*/
     text-align: justify; /*Alineación de texto: Justificado*/
 }
 
 /*Orden de la imágenes Carrusel */
-.imagen_Libro {
+.imagen_Libro { /*linea 123*/
     width: 50%; /*Tamaño Ancho*/ 
     display: flex; /*los objetos se van acomodando a medida que agranda o achiquita*/
     justify-content: center; /*Justificar contenido de la imagenes a la derecha*/
 }
 
-.imagen_Libro img{
+.imagen_Libro img{ /*lina 123*/
     max-width: 90%; /*Maximo Tamaño Ancho*/ 
     margin-bottom: 10px; /*Margen boton imagenes*/
     transform: scale(1.1); /* Escala imagenes cuando se le pasa el puntero del mouse*/
@@ -70,11 +66,11 @@
     transition: all 0.5s; /*tracción de elementos*/
 }
 
-.Container_servicios:hover .imagen_Libro img{
+.Container_servicios:hover .imagen_Libro img{ /*linea 110*/
     transform: scale(1.15); /* Escala imagenes cuando se le pasa el puntero del mouse*/
 }
 
-.btn_comprar{
+.btn_comprar{ /*linea 121*/
     border-radius: 0px 40px 100px 0px; /*Esquinas redondeadas boton*/
     background: #873C1A; /*Fondo Boton*/
     font-size: 15px; /*Tamaño de Fuente*/
@@ -89,19 +85,19 @@
     transition: all 0.3s; /*Efecto transición*/
 }
 
-.btn_comprar:hover{
+.btn_comprar:hover{  /*linea 121*/
     padding: 15px 45px; /*Area Relleno Efecto Botón*/
     border-radius: 0px 40px 50px 0px; /*Esquinas Redondeadas*/
 }
 
-.btn_comprar span{
+.btn_comprar span{ /*linea 121*/
     position: relative; /*Posición Relativa*/
     top: 6px;
     left: 8px;
 }
 
 .contenedor_principal #btn-izquierda,
-.contenedor_principal #btn-derecha{
+.contenedor_principal #btn-derecha{ /*linea 105*/
     position: absolute; /*Posición Absoluta*/
     height: 10%; /*Altura*/
     width: 50px; /*Tamaño Ancho*/ 
@@ -115,17 +111,17 @@
     background-color: #261C1A;
 }
 
-.categoria_libro{
+.categoria_libro{ /*111*/
     color: #73DCD1;
     font-size: 5vw;
     margin-left: 3px;
 }
 
-.contenedor_principal #btn-izquierda{
+.contenedor_principal #btn-izquierda{ /*linea 106*/
     left: 0; /*ubicación Izquierda*/
 }
 
-.contenedor_principal #btn-derecha {
+.contenedor_principal #btn-derecha { /*linea 190*/
     right: 0; /*ubicación derecha*/
 }
 
@@ -135,13 +131,13 @@
     transform: translate(5px);
 }
 
-.contenedor_principal #btn-izquierda span.material-icons{
+.contenedor_principal #btn-izquierda span.material-icons{  /*linea 106*/
     color: #D5CCC7; /*Color*/
     transform: rotate(180deg);
     font-size: 30px; /*Tamaño de Fuente*/
 }
 
-.contenedor_principal #btn-derecha span.material-icons {
+.contenedor_principal #btn-derecha span.material-icons {  /*linea 190*/
     color: #D5CCC7; /*Color*/
     font-size: 30px; /*Tamaño de Fuente*/
 }

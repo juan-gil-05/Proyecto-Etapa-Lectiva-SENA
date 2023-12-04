@@ -13,7 +13,7 @@ body{
 }
 
 /* logo de la pagina  */
-.logo img{    /*Linea 23*/
+.logo img{    /*Linea 26*/
     width: 140px; /*Tamaño Ancho*/   
     padding: 22px;  /*Tamaño "submargen"*/    
     cursor: pointer; /*Propiedad del curso */      
@@ -27,7 +27,7 @@ body{
     transform:scale(1.1);
 }
 
-.menu_bar .enlaces ul li a{   /*Linea 27 - 28*/
+.menu_bar .enlaces ul li a{   /*Linea 31 - 33*/
     font-size: 16px;  /*tamaño de la letra*/
     color: white; /*Color*/    
     font-weight: 600; /*Negrilla*/    
@@ -43,19 +43,19 @@ body{
 }
 
 /*se posicionan los enlaces del menu*/
-.enlaces{
+.enlaces{ /*linea 33*/
     padding-top: 12px;
 }
 
 /* clase para las propiedades de los iconos redes sociales */
-.menu_bar .redes_sociales a{ /*Linea 27 - 37*/
+.menu_bar .redes_sociales a{ /*Linea 31 - 50*/
     padding: 10px; /*espaciado iconos de redes sociales*/
     color: white; /*cambiar color iconos*/
     text-decoration: none; /*Quitar la raya de los iconos de redes*/
 }
 
 /*Posicionamos el texto del icono carrito de compras*/
-.icon-text{ /*linea 40*/
+.icon-text{ /*linea 58*/
     display: block;  /*bajamos el texto*/
     text-align: right;  /*lo ponemos a la derecha*/
     font-size: 0.7rem;  /*cambiamos su tamaño*/
@@ -64,13 +64,13 @@ body{
 }
 
 /*se posicionan los iconos del menu*/
-.redes_sociales{
+.redes_sociales{ /*50*/
     padding-top: 8px;
     padding-right: 5px;
 }
 
 /*posicionamos el separador*/
-.separador{
+.separador{ /*linea 54*/
     border-left: 1px solid #FFDECF;  /* Estilo del separador - un borde izquierdo sólido */
     margin-left: -10px; /*posicionamos*/
     margin-right: -6px;  /*posicionamos*/
@@ -79,18 +79,18 @@ body{
 }
 
 /* clase para las propiedades de los iconos */
-.menu_bar .redes_sociales span.material-icons{ /*Linea 27 - 37*/
+.menu_bar .redes_sociales span.material-icons{ /*Linea 31 - 50*/
     font-size: 30px; /* tamaño de los iconos  */   
 }
 
 /*Posicionamos nuestra caja de busqueda*/
-.Buscador {
-    padding: 2px;
+.Buscador { /*linea 42*/
+    padding: 2px;   /*lo posicionamos*/
     margin-left: -100px;
 }
 
 /*Posicionamos nuestra caja de busqueda*/
-.caja_busqueda{
+.caja_busqueda{ /*linea 44*/
     padding-left: 15px;
     padding-bottom: 5px;
     padding-top: 5px;
@@ -103,13 +103,13 @@ body{
 }
 
 /*Posicionamos nuestra caja de busqueda*/
-.buscar-libro{
+.buscar-libro{ /*linea 45*/
     height: 40px;
     width: 600px;
 }
 
 /*Posicionamos nuestro boton de busqueda*/
-.btn-buscar{
+.btn-buscar{ /*linea 45*/
     position: absolute;
     border-radius: 100%;
     margin-left: -39px;
@@ -117,13 +117,13 @@ body{
     background-color: white;
     font-size: 8px;
     width: 37px;
-    border: none;
-    outline: none;
+    border: none;  /*le quitamos el borde*/
+    outline: none; /*le quitamos el borde*/
     cursor: pointer;
     padding-top: 5px;
 }
 
-.menu_principal{  /*Linea 22*/
+.menu_principal{  /*Linea 25*/
     background-color: #883D1A; /*Color del fondo menu principal*/
     /*Unidades de medida fija y dinamica*/    
     height: 115px; /*alto del objeto*/
@@ -136,45 +136,45 @@ body{
 }
 
 /* menu bar es  hijo 2.1, 2.2 */
-.menu_bar { /*Linea 27*/
+.menu_bar { /*Linea 31*/
     width: 100%; /*Ancho iconos se ajustan*/
     display: flex; /* los objetos se van acomodando a medida que agranda o achiquitar la pantalla*/
     justify-content: space-between; /*Espacio entre los objetos*/
     height: 50px;
 }
 
-.menu_bar .enlaces ul li{ /*Linea 27 - 28*/
+.menu_bar .enlaces ul li{ /*Linea 31 - 33*/
     display: inline-block; /*Alinear horizontalmente*/
     padding: 0px 10px; /*Area de Relleno - contenido dentro de la márgen*/
 }
 
 
 /*agregamos efecto al boton de buscar*/
-#btn-icon{  
+#btn-icon{  /*linea 43*/
     transition: 0.4s;
 }
 
-#btn-icon:hover{
+#btn-icon:hover{ /*linea 43*/
     transform: scale(1.2);
 }
 
 /*pseudo clase :hover*/
-.menu_bar .enlaces ul li a:hover{ /*Linea 27 - 28*/
+.menu_bar .enlaces ul li a:hover{ /*Linea 31 - 33*/
     color: #73DCD1; /*Cambio de color menu: clientes, productos, contactenos*/    
     background-size: 90% 2px; /*efecto de raya de letras*/    
 }
 
 /*animacion de iconos*/
-.redes_sociales .material-icons{ /*Linea 37*/ 
+.redes_sociales .material-icons{ /*Linea 50*/ 
     transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/    
 }
-.redes_sociales .material-icons:hover{ /*Linea 37*/
+.redes_sociales .material-icons:hover{ /*Linea 50*/
     color: #1A1E87; /*Cambio de color iconos redes sociales*/ 
     transform: scale(1.2);/*tracción de elementos*/    
 }
 
 /*cambio de color de texto 'Mi Carrito'*/
-.redes_sociales .icon-text{ /*Linea 37*/ 
+.redes_sociales .icon-text{ /*Linea 50*/ 
     transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/    
 }
 .redes_sociales .icon-text:hover{ /*Linea 37*/
@@ -182,26 +182,26 @@ body{
     transform: scale(1.0);/*tracción de elementos*/    
 }
 
-#carrito:hover {
+#carrito:hover {  /*linea 57*/
     color: white; /*Cambio de color icono carrito*/ 
     transform: scale(1.2);/*tracción de elementos*/ 
     transition: all 0.5s; /*cambio de color al pasar el cursor del mouse*/    
 }
 
-.Buscar:hover{
+.Buscar:hover{  /*linea 42*/
     color: #73DCD1; /*Cambio de color Barra de busqueda*/    
     background-size: 90% 2px; /*efecto de raya de letras*/  
 }
 
 /*Estilos de boton*/
-.menu_principal i{ /*Linea 22*/
-    color: #78F436; /*Color botón responsive*/
+.menu_principal i{ /*Linea 25*/
+    color: #73DCD1; /*Color botón responsive*/
     font-size: 40px; /*tamaño fuente del botón responsive*/
     cursor: pointer; /*Cambia el puntero del mouse*/
     transition: all 0.5s; /*tracción de elementos*/
     display: none; /*Pantalla Ninguna*/
 }
 
-.menu_principal i:hover{ /*Linea 22*/
-    color: lightcoral; /*Color botón responsive*/
+.menu_principal i:hover{ /*Linea 25*/
+    color: #73DCD1; /*Color botón responsive*/
 }
